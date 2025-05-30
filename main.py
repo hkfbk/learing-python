@@ -259,10 +259,6 @@ def monkey_picking_peaches_p():
     print(f'第一天摘了{initial}个桃子')
 
 
-        
-    
-        
-    
 def main():
     quick_sort()
     
