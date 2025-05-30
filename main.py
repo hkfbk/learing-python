@@ -1,13 +1,4 @@
-from functools import wraps
-from time import time
-def runtime(func): # type: ignore
-    @wraps(func) # type: ignore
-    def wrapper(*args, **kwargs): # type: ignore
-        begin:float = time()
-        func(*args, **kwargs)
-        end:float = time()
-        print(f'{func.__name__} runtime is {end - begin}s') # type: ignore
-    return wrapper # type: ignore
+from RunTime import runtime # type: ignore
 
 def get_formatted_name(first:str, last:str)->str:
     full_name = first + " " + last
@@ -262,7 +253,7 @@ def monkey_picking_peaches():
     
 def monkey_picking_peaches_p():
     initial:float = 1
-    for day in range(1, 10):
+    for day in range(1, 10): # type: ignore
         initial+=1
         initial*=2
     print(f'第一天摘了{initial}个桃子')
