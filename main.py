@@ -247,7 +247,7 @@ def user_get_money():
             
 def monkey_picking_peaches():
     initial:float = 1.0
-    for day in range(1, 10):
+    for day in range(1, 10): # type: ignore
         initial+=1.5
     print(f'第一天摘了{initial:.0f}个桃子')
     
