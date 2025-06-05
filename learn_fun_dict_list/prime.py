@@ -59,17 +59,17 @@ class Tree:
         self.cur_node = self.root
     
     def inseart(self,v:int):
-        if self.cur_node.cur == None:
+        if self.cur_node.cur == None: # type: ignore
             self.cur_node = self.Node(v)
-        elif self.cur_node.left_node == None:
-            self.cur_node.left_node = self.Node(v)
-        elif self.cur_node.right_node == None:
-            self.cur_node.right_node = self.Node(v)
+        elif self.cur_node.left_node == None: # type: ignore
+            self.cur_node.left_node = self.Node(v) # type: ignore
+        elif self.cur_node.right_node == None: # type: ignore
+            self.cur_node.right_node = self.Node(v) # type: ignore
         
 
 
 
 
 def run():
-    c:int = None
+    c:int = None # type: ignore
     print(c == None)
