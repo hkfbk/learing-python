@@ -62,8 +62,8 @@ class Person:
 # 【特殊方法】 为Person实现__str__方法，打印姓名:年龄。
     def __str__(self) -> str:
         return f'{self.m_name}:{self.__age}'
-    
-    
+
+
 
 # 【继承】 创建Student类继承Person，新增属性student_id。重写introduce()方法，包含学号信息。
 class Student(Person):

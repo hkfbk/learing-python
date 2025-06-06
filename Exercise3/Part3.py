@@ -76,15 +76,19 @@ def extract_num():
 
 # 【编译重用】 编译正则r"\d+"，多次匹配不同字符串提高效率。
 def compile_regex():
-    pattern = re.compile(r'.+')
-    result1 = pattern.search('jfeiosjfoiej')
-    result2 = pattern.search('jfsefesej')
-    result3 = pattern.search('fqrqrqrqrq')
-    result4 = pattern.search('jfeiosjwwwwwwwwwfoiej')
-    print(result1.group())
-    print(result2.group())
-    print(result3.group())
-    print(result4.group())
+    pattern = re.compile(r"\d+")
+    result1 = pattern.search('13212312')
+    result2 = pattern.search('4242234')
+    result3 = pattern.search('543545')
+    result4 = pattern.search('41231235464542364653426544236')
+    if result1 is not None:
+        print(result1.group())
+    if result2 is not None:
+        print(result2.group())
+    if result3 is not None:
+        print(result3.group())
+    if result4 is not None:
+        print(result4.group())
     
     
 def run():
