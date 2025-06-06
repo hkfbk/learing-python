@@ -6,7 +6,8 @@ sys.path.insert(0, project_root)
 
 from RunTime import runtime # type: ignore
 from Exercise3.Part1 import run as run1
-from Exercise3.Part2 import run
+from Exercise3.Part2 import run as run2
+from Exercise3.Part3 import run
 
 def get_formatted_name(first:str, last:str)->str:
     full_name = first + " " + last
